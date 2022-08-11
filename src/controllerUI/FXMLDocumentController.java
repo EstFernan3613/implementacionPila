@@ -17,6 +17,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import modelo.Pila;
+import modelo.tools;
 import static modelo.tools.convertirPilaAHtml;
 
 /**
@@ -63,7 +64,9 @@ public class FXMLDocumentController implements Initializable {
         Productos objp=new  Productos(nombreProducto, 0, 0);
         pilap.apilar(objp);
         
-        String s = convertirPilaAHtml(pilap);
+        String mostrarPila = tools.convertirPilaAHtml(pilap);
+        
+        webEngine.loadContent(mostrarPila);
                
     }
     

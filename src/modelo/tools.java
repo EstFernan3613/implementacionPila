@@ -37,7 +37,7 @@ public class tools {
         if (!q.estaVacia())
         {
             sb.append("<table align=\"center\" border=\"2\">");
-            sb.append("<tr>").append("<th>").append("Texto").append("</th>").append("</tr>");
+            sb.append("<tr>").append("<th>").append("Productos").append("</th>").append("</tr>");
             do
             {
                 Productos e = q.desapilar();
