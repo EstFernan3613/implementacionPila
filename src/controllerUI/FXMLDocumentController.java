@@ -17,6 +17,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import modelo.Pila;
+import static modelo.tools.convertirPilaAHtml;
 
 /**
  *
@@ -36,10 +37,14 @@ public class FXMLDocumentController implements Initializable {
     private Button idbutton;
 
     @FXML
-    private Label idlabel; 
+    private Label idlabel;
+    private Label idlabel2;
+    private Label idlabel3;
     
     @FXML
-    private TextField idtext;     
+    private TextField idtext;
+    private TextField idtext2;
+    private TextField idtext3;
   
     @FXML
     private void handleButtonAction(ActionEvent event) {
@@ -48,13 +53,18 @@ public class FXMLDocumentController implements Initializable {
     }
     
     @FXML
-    private void AñadirProducto(ActionEvent event) {
+    private void AddProduct(ActionEvent event) {
         
         String nombreProducto= idtext.getText();
+        int cantidadProducto = Integer.parseInt(idtext2.getText());
+        double valorProducto= Double.parseDouble(idtext3.getText());
         
-        Pila<Productos> pilaP = new Pila<>();
         
-        pilaP.apilar(Pila);
+        Productos objp=new  Productos(nombreProducto, 0, 0);
+        pilap.apilar(objp);
+        
+        String s = convertirPilaAHtml(pilap);
+               
     }
     
     @Override
@@ -62,6 +72,6 @@ public class FXMLDocumentController implements Initializable {
         // TODO
         webEngine = idview.getEngine();
         pilap= new Pila<>();
-        webEngine.loadContent();
+        //webEngine.loadContent();
     }        
 }

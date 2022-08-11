@@ -10,10 +10,14 @@
 <AnchorPane id="AnchorPane" prefHeight="342.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerUI.FXMLDocumentController">
     <children>
         <Button fx:id="button" layoutX="389.0" layoutY="292.0" onAction="#handleButtonAction" text="Click Me!" />
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+        <Label fx:id="label" layoutX="489.0" layoutY="296.0" minHeight="16" minWidth="69" />
       <Button fx:id="idbutton" layoutX="14.0" layoutY="292.0" mnemonicParsing="false" text="Add" />
       <WebView fx:id="idview" layoutX="277.0" layoutY="54.0" prefHeight="200.0" prefWidth="272.0" />
-      <Label fx:id="idlabel" layoutX="75.0" layoutY="54.0" prefHeight="17.0" prefWidth="139.0" text="Cual es su Producto" />
-      <TextField fx:id="idtext" layoutX="70.0" layoutY="95.0" />
+      <Label fx:id="idlabel" layoutX="70.0" layoutY="46.0" prefHeight="17.0" prefWidth="139.0" text="Cual es su Producto?" />
+      <TextField fx:id="idtext" layoutX="65.0" layoutY="72.0" />
+      <Label fx:id="idlabel2" layoutX="65.0" layoutY="137.0" text="Cantidad del Producto" />
+      <TextField fx:id="idtext2" layoutX="65.0" layoutY="159.0" />
+      <TextField fx:id="idtext3" layoutX="65.0" layoutY="229.0" />
+      <Label fx:id="idlabel3" layoutX="65.0" layoutY="205.0" text="Valor del Producto" />
     </children>
 </AnchorPane>

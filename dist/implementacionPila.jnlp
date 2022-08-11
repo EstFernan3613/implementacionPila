@@ -8,8 +8,8 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="implementacionPila.jar" size="3223" download="eager" />
-    <jar href="lib\pila.jar" size="7617" download="eager" />
+    <jar href="implementacionPila.jar" size="4713" download="eager" />
+    <jar href="lib\pila.jar" size="7288" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="implementacionPila" >
     <param name="requiredFXVersion" value="8.0+"/>
